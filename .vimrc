@@ -40,7 +40,6 @@ set background=dark
 " -------------------
 set nocompatible
 filetype plugin on
-syntax on
 " -------------------
 " This is the magic line to change in vimwiki to make the dates how I
 " want 'em (stop editing vimwiki locally dude):
