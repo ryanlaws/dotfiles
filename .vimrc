@@ -5,6 +5,8 @@ set tabstop=2
 set shiftwidth=2
 set tw=80	
 set ai
+set hlsearch
+set ic
 
 " Mappings - buffer navigation
 nnoremap <C-K> :bp <CR>
@@ -40,17 +42,13 @@ set background=dark
 " -------------------
 set nocompatible
 filetype plugin on
-" -------------------
-" This is the magic line to change in vimwiki to make the dates how I
-" want 'em (stop editing vimwiki locally dude):
-"let s:vimwiki_defaults.diary_link_fmt = '%y%m%d'
 
 " vim-plug
 " --------
 call plug#begin('~/.vim/plugged')
 " plugins
 Plug 'https://github.com/freeo/vim-kalisi'
-Plug 'https://github.com/vimwiki/vimwiki.git'
+Plug 'https://github.com/ryanlaws/vimwiki.git'
 Plug 'https://github.com/vim-scripts/Shades-of-Amber'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/marijnh/tern_for_vim.git', { 'for': 'js' }
@@ -62,3 +60,4 @@ call plug#end()
 " Plugins-dependent stuff
 "colorscheme shadesofamber
 colorscheme kalisi
+set t_Co=256
