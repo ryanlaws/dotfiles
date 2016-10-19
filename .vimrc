@@ -5,9 +5,8 @@ set tabstop=2
 set shiftwidth=2
 set tw=80	
 set ai
-set ic
 set hlsearch
-
+set ic
 
 " Show git status
 " Doesn't seem to work..
@@ -69,10 +68,6 @@ set background=dark
 " -------------------
 set nocompatible
 filetype plugin on
-" -------------------
-" This is the magic line to change in vimwiki to make the dates how I
-" want 'em (stop editing vimwiki locally dude):
-"let s:vimwiki_defaults.diary_link_fmt = '%y%m%d'
 
 " vim-plug
 " NOTE: 
@@ -98,3 +93,4 @@ call plug#end()
 " Plugins-dependent stuff
 "colorscheme shadesofamber
 colorscheme kalisi
+set t_Co=256
